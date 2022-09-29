@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="20"
+    android:background="#2F2E41"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#26FFFFFF"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Calculadora de Cuotas"
+                android:textAlignment="center"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txvValorInmueble"
+                android:layout_width="352dp"
+                android:layout_height="42dp"
+                android:layout_margin="0dp"
+                android:text="@string/por_favor_ingrese_el_valor_del_inmueble"
+                android:textAlignment="center"
+                android:textColor="#00BCD4"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etValorInmueble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:autofillHints=""
+                android:background="@drawable/caja"
+                android:inputType="number"
+                android:ems="10"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColorHint="#D3D3D3"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/txvCuotaInicial"
+                android:layout_width="352dp"
+                android:layout_height="42dp"
+                android:text="@string/su_cuota_inicial_seria_la_siguiente"
+                android:textAlignment="center"
+                android:textColor="#00BCD4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txvValorCuotaInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/caja"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="#D3D3D3" />
+
+            <TextView
+                android:id="@+id/txvPeriodoPagos"
+                android:layout_width="352dp"
+                android:layout_height="64dp"
+                android:text="@string/indique_el_periodo_de_pagos_en_a_os_de_la_cantidad_restante"
+                android:textAlignment="center"
+                android:textColor="#00BCD4"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etPeriodoPagos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:autofillHints=""
+                android:background="@drawable/caja"
+                android:inputType="number"
+                android:ems="10"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColorHint="#D3D3D3"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/txvCuotaMensual"
+                android:layout_width="352dp"
+                android:layout_height="42dp"
+                android:text="Su cuota mensual a pagar es de:"
+                android:textAlignment="center"
+                android:textColor="#00BCD4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txvValorCuotaMensual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/caja"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColorHint="#D3D3D3" />
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:onClick="onClick"
+                android:text="@string/calcular"
+                android:textSize="18sp"
+                tools:cornerRadius="5dp" />
+
+            <Button
+                android:id="@+id/btnLimpiarCampos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#2196F3"
+                android:text="Limpiar Campos" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

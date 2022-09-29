@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="su_cuota_inicial_seria_la_siguiente">Su cuota inicial seria la siguiente:</string>
+    <string name="indique_el_periodo_de_pagos_en_a_os_de_la_cantidad_restante">Indique el periodo de pagos (en años) de la cantidad restante</string>
+    <string name="su_cuota_mensual_a_pagar_seria">Su cuota mensual a pagar seria</string>
+    <string name="por_favor_ingrese_el_valor_del_inmueble">Por favor ingrese el valor del inmueble</string>
+    <string name="calcular">Calcular</string>
+    <string name="su_cuota_mensual">su cuota mensual a pagar es de:</string>
+</resources>
